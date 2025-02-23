@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="catstyle.css">
+    <title>Cat Breed Info Finder</title>
+ 
+</head>
+<body>
+    <div class="Catbreed">
+        <h1>Find Cat Breed Information</h1>
+    <select id="cat-select" onchange="fetchCatInfo()">
+        <option value="">Select a breed</option>
+    </select>
+    </div>
+
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="cat-info"></div>
+    
+    <script src="catfunction.js"></script>
+</body>
+</html>
