@@ -6,7 +6,8 @@ async function fetchBreeds() {
 
         const data = await response.json();
         const select = document.getElementById("cat-select");
-        
+
+    // Drop-down Option
         data.forEach(breed => {
             const option = document.createElement("option");
             option.value = breed.id;
